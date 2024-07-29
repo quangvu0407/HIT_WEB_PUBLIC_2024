@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins?query=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Khoqua</title>
+</head>
+<style>
+    .box1{
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+    img{
+        width: 100px; 
+        height: 40px;
+        object-fit: cover;
+        border-radius: 10px; /* Đặt bo góc ảnh */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
+        margin-left: 20px   ;
+    }
+    .box1_title{
+        color: rgb(98, 97, 97);
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .box2{
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+    }
+    .search_tk{
+        width: 140vh;
+        padding: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    .box2_icon{
+        margin-left: 60px;
+    }
+    .box2_icon i{
+        margin-left: 20px;
+    }
+    .box2 img{
+        width: 100px; 
+        height: 40px;
+        object-fit: cover;
+        border-radius: 10px; /* Đặt bo góc ảnh */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
+        margin-left: 20px   ;
+    }
+    .choice{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 180px;
+    }
+    li{
+        margin-left: 60px;
+        font-weight: bold;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        height: 71vh;
+        background-image: url(https://github.com/quangvu0407/quangvu0407/blob/main/bai3web.png?raw=true);
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin: 20px 20px 20px 20px;
+        border-radius: 20px;
+      }
+      .main_text {
+        margin-left: 80px;
+      }
+      span{
+        color: rgb(70, 68, 68);
+        font-size: 24px;
+      }
+      .main_shop{
+        background-color: pink;
+        text-align: center;
+        width: 90px;
+        height: 40px;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+</style>
+<body>
+    <div class="box1">
+            <img src="https://i.pinimg.com/564x/48/97/b7/4897b797f0d7324e734f8f0f92e95ad0.jpg" alt="icon">
+            <p class="box1_title">FREE SHIPPING THIS WEEK ORDER OVER-$55</p>
+            <form>
+                <select id="currency-select" name="currency">
+                    <option value="USD">USD $</option>
+                    <option value="EUR">Euro</option>
+                    <option value="JPY">Yên Nhật</option>
+                    <option value="GBP">Bảng Anh</option>
+                    <option value="CNY">Nhân dân tệ</option>
+                </select>
+            </form>
+            <form>
+                <select id="language-select" name="language">
+                  <option value="vi">Tiếng Việt</option>
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="es">Español</option>
+                </select>
+            </form>
+    </div>
+    <hr>
+    <div class="box2">
+        <h1 style="margin-left: 22px;">Anon</h1>
+        <div class="search">
+            <p class="search_tk">Enter your product name...</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="box2_icon">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </div>
+    <hr>
+    <ul class="choice">
+        <li>HOME</li>
+        <li>CATELOGI</li>
+        <li>MEN'S</li>
+        <li>WOMEN'S</li>
+        <li>JEWELRY</li>
+        <li>PERFUME</li>
+        <li>BLOG</li>
+        <li>HOT OFFERS</li>
+    </ul>
+    <div class="main">
+        <div class="main_text">
+            <h1 style="color: pink;">Trending item</h1>
+            <h1>WOMEN'S LASTEST</h1>
+            <h1>FASHION SALE</h1>
+            <p>Starting at $ <span>20</span>.00</p>
+            <a class="main_shop" href="https://shopee.vn/m/8-8?gad_source=1&gclid=EAIaIQobChMI85_G0ZXLhwMV0BSDAx2nPQwWEAAYASAAEgLEc_D_BwE"> Shop now</a>
+        </div>
+    </div>
+</body>
+</html>

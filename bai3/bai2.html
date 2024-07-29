@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <style>
+        .title {
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        .title img {
+            width: 30px; 
+            height: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+        .title_1 {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 24px;
+            color: rgb(89, 86, 86);
+        }
+        .titlex2 {
+            margin-right: 20px;
+            font-size: 24px;
+            color: rgb(89, 86, 86);
+        }
+        .image_anh {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin: 40px;
+        }
+        .imagee {
+            width: 100%;
+            height: auto;
+        }
+        .image_content {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-gap: 10px;
+            text-align: center;
+        }
+        .image_content h1 {
+            font-size: 28px;
+            font-weight: normal;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .image_content p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Karma?query=Karma">
+    <div class="title">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNEBO2OUKQjP-RSbIZae3jIq76g3rMrn9vQ&s" alt="icon">
+        <p class="title_1">Myfood</p>
+        <p class="titlex2">mail</p>
+    </div>
+    <div class="image_anh">
+        <div class="image_content">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="anh1" class="imagee">
+            <div>
+                <h1>The perfect sandwich, A Read NYC Classic</h1>
+                <p>just some random text, lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+        </div>
+        <div class="image_content">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="anh2" class="imagee">
+            <div>
+                <h1>Let me tell you about this steak</h1>
+                <p>once again, some randomt to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+        </div>
+        <div class="image_content">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="anh3" class="imagee">
+            <div>
+                <h1>Cherries interrupted</h1>
+                <p>lorem ipsum text praesent tincidunt ipsum lipsum</p>
+                <p style="margin-top: 10px;">What else ?</p>
+            </div>
+        </div>
+        <div class="image_content">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="anh4" class="imagee">
+            <div>
+                <h1>Once again, Robust Wine and Vegetable Pasta</h1>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
