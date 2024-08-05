@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inconsolata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document</title> 
+</head>
+<style>
+  * {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    font-family: "Inconsolata", monospace;
+  }
+  #new{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  h2{
+    margin-left: 20px;
+    font-weight: normal;
+  }
+  #main_menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(145, 145, 157);
+    margin-right: 20px;
+  }
+  nav #main_menu li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 4px 15px;
+  }
+  nav #main_menu li:hover a{
+    background-color: pink;
+    transition: all 0.3s;
+  }
+  #menu_toggle{
+    color: black;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #header nav{
+    display: none;
+    position: absolute;
+    right: 40px;
+  }
+  #menu_2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  #menu_2_list {
+    display: flex;
+  }
+  #main_menu_2{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  #main_menu_2 li a {
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+  }
+
+#main_menu_2 li a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+.content{
+  margin-top: 30px;
+  display: flex;
+  width: 100vw;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  flex-basis: 33%;
+}
+.content img{
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.last{
+  margin-top: 80px;
+  justify-content: center;
+  text-align: center;
+}
+.cc{
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.cc img {
+  width: 80px;
+  height: auto;
+}
+</style>
+<script>
+  $(document).ready(function() {
+    $('#menu_toggle').click(function(){
+      $('#menu nav').slideToggle();
+    });
+  })
+</script>
+<body>
+  <div id="new">
+    <h2>MyPortfolio.</h2>
+    <div id="menu">
+      <div id="header">
+        <div id="menu_toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+          <ul id="main_menu">
+            <li>
+              <a href="">Trang chủ</a>
+            </li>
+            <li>
+              <a href="">Giới thiệu</a>
+            </li>
+            <li>
+              <a href="">Dịch vụ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div id="menu_2">
+    <div>
+      <h1>Hey, I'm Johan Stanworth</h1>
+      <h5>Freelance Create & Professional Graphics Designer</h5>
+    </div>
+    <div id="menu_2_list">
+      <ul id="main_menu_2">
+        <li>
+          <a href="">All</a>
+        </li>
+        <li>
+          <a href="">Web</a>
+        </li>
+        <li>
+          <a href="">Design</a>
+        </li>
+        <li>
+          <a href="">Branding</a>
+        </li>
+        <li><a href="">Photography</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div>
+      <img src="https://haste.shufflehound.com/branding-agency/wp-content/uploads/sites/4/2020/11/P3.jpg.webp" alt="">
+      <img src="https://cdn.pixabay.com/photo/2019/07/10/12/27/white-4328568_1280.jpg" alt="">
+      <img src="https://i1.wp.com/laclacshop.com/wp-content/uploads/2021/03/coco-body-oil.jpg?resize=768%2C768&ssl=1" alt="">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeVT1cXF_im_VkwB0pmretqmP0zCnXozrIUWBifrajMQAu17kd" alt="">
+      <img src="https://www.digitaltrends.com/wp-content/uploads/2019/10/brandless_pro_blender.jpg?fit=720%2C405&p=1" alt="">
+      <img src="https://dddn.1cdn.vn/2018/06/21/diendandoanhnghiep.vn-media-uploaded-423-2018-06-21-_amazonecho.jpg" alt="">
+    </div>
+  </div>
+  <div class="last">
+    <h1>My clients</h1>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    <p>explicabo inventore</p>
+  </div>
+  <div class="cc">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4YkTVk5DrmtCtJ07rjbklPxpML5s1W3dCg&s" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS43QI-BMDJHn5uIaaF6xlp0AceiX8gjG0bydDxLe9i9VoBp6xO" alt="">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbrPsZmyuo6PvHHI1rN0hwud7svIKPIE9X9rflfzjeAawelVhN" alt="">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhbHJJddhytKBp3474wewB58uiXkpHwt3wTMDqyBzo3jV-7qNA" alt="">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtI0N2MSOKwFscqfb3NHI0AO8x9EypQ5MKx0pX8DOj8kqwzSXL" alt="">
+  </div>
+</body>
+</html>
