@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        bottom: 0px;
+        padding: 0px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content:space-between;
+        height: 40px;
+        margin-top: -10px;
+    }
+
+    .menu .menu_1{
+        display: flex;
+        list-style-type: none;
+        margin-right: 50px;
+        gap: 10px;
+    }
+
+    .menu div{
+        display: flex;
+        gap: 20px;
+        margin-left: 3%;
+    }
+    
+    .menu_1 a {
+        text-decoration: none;
+    }
+
+    .start {
+        display: flex;
+    }
+    .circle {
+        width: 80px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 3%;
+        animation: spin 5s linear infinite;
+        background: conic-gradient(red, yellow, green, blue);
+    }
+  
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .background {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: -8px;
+    }
+      
+    .background img {
+        margin-left: -8%;
+        max-width: 85%;
+    }
+    
+    .overlay-text {
+        position: absolute;
+        text-align: center;
+        top: 87%;
+        left: 80%;
+        width: 17%;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        color: rgb(123, 100, 190);
+        background-color: bisque;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .overlay-text p {
+        margin: 10px;
+        font-style: italic;
+    }
+    h2 {
+        margin-left: 10%;
+        margin-top: 10px;
+        color: rgb(189, 138, 76);
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        gap: 10px;
+        margin: 0px 10% 0px 10%;
+    }
+
+    .content img{
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+    }
+
+    .content div{
+        display: flex;
+        position: relative;
+    }
+
+    .content div p {
+        position: absolute;
+        top: -14px;
+        right: 0;
+        height: 15px;  
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .end {
+        display: flex;
+        background-color: orange;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+</style>
+<body>
+    <hr>
+    <div class="menu">
+        <div>
+            <p style="font-weight: bold;">CLB TIN HỌC</p>
+            <p>Đại học công nghiệp Hà Nội</p>
+        </div>
+        <ul class="menu_1">
+            <li><a href="https://shopee.vn/">Activity</a></li>
+            <li><a href="https://shopee.vn/">Learning</a></li>
+            <li><a href="https://shopee.vn/">Event</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="start">
+        <div class="circle"></div>
+        <div class="background">
+            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/453749530_1081121393836345_5677193696328816366_n.png?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHl2OpDE3Cu4_0x-YxG9Ewxni0nqeMe6zOeLSep4x7rM4gIU-ezGyKBfz1pVWe5HafFkKhTGBCH-j9G-GldhCJj&_nc_ohc=f5z_zRb3fb8Q7kNvgHGDyBK&_nc_ht=scontent.fhan14-1.fna&oh=00_AYCHEHysbld3jXP_ftpVQjFqnW7Tkw-4aLnOWoVzB3hFmQ&oe=66BA5C53" alt="">
+            <div class="overlay-text">
+                <p >Truyền lửa đam mê</p>
+            </div>
+        </div>
+    </div>
+    <h2>Activity</h2>
+    <div class="content">
+        <div>
+            <img src="https://booking.pystravel.vn/uploads/posts/albums/462/c8f505a713695d3f18f1e4de703ffb48.jfif" alt="">
+            <p>Du lịch năm 2019</p>
+        </div>
+        <div>
+            <img src="https://booking.pystravel.vn/uploads/posts/albums/462/c8f505a713695d3f18f1e4de703ffb48.jfif" alt="">
+            <p>teach club championship </p>
+        </div>
+        <div>
+            <img src="https://booking.pystravel.vn/uploads/posts/albums/462/c8f505a713695d3f18f1e4de703ffb48.jfif" alt="">
+            <p>offline CTV hana 2024</p>
+        </div>
+    </div>
+    <div class="end">
+        <h5>@ copy right in 2024</h5>
+    </div>
+    
+</body>
+</html>
