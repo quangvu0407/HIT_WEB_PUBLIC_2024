@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template: 100px 300px 100px/ repeat(3,1fr);
+        gap:20px;
+        margin: 50px 100px 50px 100px;
+        text-align: center;
+    }
+    .item {
+        height: 100%;
+        border: 1px solid black;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .item1 {
+        background-color: red;
+        grid-column: 1/-1;
+    }   
+    .item2 {
+        display: grid;
+        grid-template: 120px 120px/repeat(3, 1fr);
+        background-color:aqua;
+        grid-column: 1/3;
+        gap: 30px;
+    }
+    .item5 {
+        background-color: orange;
+        grid-column: 1/-1;
+        margin: 20px 20px 0px 20px;
+    }
+    .item6 {
+        background-color: rgb(121, 121, 205);
+        grid-column: 1/3;
+        margin-left: 20px;
+    }
+    .item7 {
+        grid-column: 3;
+        background-color: red;
+        margin-right: 20px;
+    }
+    .item3 {
+        background-color: green;
+    }
+    .item4 {    
+        background-color:blueviolet;
+        grid-column: 1/-1;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">
+            <div class="item2 item5">5</div>
+            <div class="item2 item6">6</div>
+            <div class="item2 item7">7</div>
+        </div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+</body>
+</html>

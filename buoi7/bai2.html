@@ -1,0 +1,186 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai2</title>
+    </head>
+    <style>
+        .container {
+            display: grid;
+            grid-template: 200px 600px/repeat(5, 1fr);
+            margin: 2% 2% 2% 2%;
+        }
+        .item {
+            height: 100%;
+            background-color: white;
+            border: 1px solid pink  ;
+        }
+        .item1 {
+            display: grid;
+            grid-template-columns: 200px/repeat(4,1fr);
+            grid-column: 1/-1;
+            gap:40px;
+            border: 0px;
+        }
+        .item1_1 {
+            grid-column: 1/2;
+            background-image: url(https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/5/_/5.png);
+            border: 1px solid black;
+        }
+        .item1_2 {
+            grid-column:2/4;
+            background-image: url(https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/6/a/6a.png);
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(178, 137, 137, 0.1);
+        }
+        .item1_1, .item1_2 {
+            background-size: cover;
+            background-position: center;
+        }
+        .box {
+            margin-left: 20px;
+        }
+        .box h1{
+            font-weight: normal;
+        }
+        .box h2{
+            margin-top: -2%;
+        }
+        .item2 {
+            display: grid;
+            grid-template-columns: 600px/repeat(5, 1fr);
+            grid-column: 1 / -1;
+            gap: 2%;
+            margin-top: 40px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .menu h2 {
+            margin-top: -2%
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+        .menu li {
+            margin-bottom: 20px;
+        }
+        .item2_1 {
+            background-color: white;
+            margin-left: 20px;
+            width: 200px;
+        }
+        .item2_2 {
+            grid-column: 2;
+        }
+        .item2_3 {
+            grid-column: 3;
+        }
+        .item2_4 {
+            grid-column: 4;
+        }
+        .item2_5 {
+            grid-column: 5;
+        }
+        
+        .item2 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .item2 .font {
+            margin-top: -30%;
+        }
+        .menu .ed{
+            text-decoration: underline;
+            margin-top: 5%;
+            position: absolute;
+        }
+        .menu ul li a:hover {
+            color: white;
+            padding: 2%;
+            background-color: rgb(99, 83, 83);
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="item item1">
+                <div class="item1 item1_1">
+                    <div class="box">
+                        <h1>Orange juice</h1>
+                        <h2>40% flat</h2>
+                        <div>
+                            <a href="https://shopee.vn/">Shop now</a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="item1 item1_2">
+                    <div class="box">
+                        <h1>Healthy Organic Vegetables</h1>
+                        <h2>Sale 20% Off</h2>
+                        <div>
+                            <a href="https://shopee.vn/">Shop now</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="item item2">
+                <div class="item2 item2_1">
+                    <div class="menu">
+                        <h2>Food</h2>
+                        <ul>
+                            <li>
+                                <a href="">Fast food</a>
+                            </li>
+                            <li>
+                                <a href="">Vegan food</a>
+                            </li>
+                            <li>
+                                <a href="">Meat food</a>
+                            </li>
+                            <li>
+                                <a href="">Sweet food</a>
+                            </li>
+                        </ul>
+                        <a class="ed" href="https://shopee.vn/">All category</a>
+                    </div>
+                </div>
+                <div class="item2 item2_2">
+                    <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_76.png" alt="">
+                    <div class="font">
+                        <h3>Grilled sheep</h3>
+                        <p>$50.00</p>
+                    </div> 
+                </div>
+                <div class="item2 item2_3">
+                    <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_108.png" alt="">
+                    <div class="font">
+                        <h3>Salmon Florentine</h3>
+                        <p>$20.00</p>
+                    </div>
+                </div>
+                <div class="item2 item2_4">
+                    <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_107.png" alt="">
+                    <div class="font">
+                        <h3>Turkey</h3>
+                        <p>$50.00</p>
+                    </div>
+                </div>
+                <div class="item2 item2_5">
+                    <img src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_104_1.png" alt="">
+                    <div class="font">
+                        <h3>Goose breast</h3>
+                        <p>$15.00</p>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
